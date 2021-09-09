@@ -52,7 +52,7 @@ const prompt = () => {
 };
 
 const viewAllDepartments = (req, res) => {
-    const sql = `SELECT * FROM employee`;
+    const sql = `SELECT * FROM department`;
     db.query(sql, (err, res) => {
       if (err) throw err;
   
